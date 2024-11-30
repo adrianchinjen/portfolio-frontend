@@ -1,5 +1,11 @@
+import DarkModeToggle from '../DarkModeToggle';
+
 const Home = () => {
-  return <div>This is home page</div>;
+  return (
+    <div>
+      <DarkModeToggle />
+    </div>
+  );
 };
 
 export default Home;
