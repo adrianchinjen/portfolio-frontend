@@ -7,7 +7,9 @@ interface PageBackgroundProps {
 }
 
 const PageBackground: React.FC<PageBackgroundProps> = ({ children }) => {
-  return <div className="">{children}</div>;
+  return (
+    <div className="flex min-h-screen w-full flex-col bg-df-light dark:bg-df-dark">{children}</div>
+  );
 };
 
 export default PageBackground;
