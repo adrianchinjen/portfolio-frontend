@@ -3,14 +3,14 @@ import Paragraph from '../ui/text/global/Paragraph';
 import Subheading from '../ui/text/global/Subheading';
 
 const HeroSection = () => {
-  const width = window.innerWidth;
-  const height = window.innerHeight;
+  // const width = window.innerWidth;
+  // const height = window.innerHeight;
   return (
     <>
       {/* SECTION 1 */}
-      <div className="mx-auto flex max-w-7xl flex-col pt-20 lg:pt-4 xl:flex-row xl:pt-6 2xl:pt-10">
-        {/* COLUMN 1 */}
-        <div className="flex w-full justify-center border border-slate-300 p-4 xl:min-h-56 xl:justify-start 2xl:min-h-64 3xl:min-h-80">
+      <div className="mx-auto grid max-w-7xl pt-20 lg:pt-4 xl:grid-flow-col xl:grid-rows-3 xl:pt-16 2xl:pt-10">
+        {/* SECTION 1 */}
+        <div className="w-full justify-center border border-slate-300 p-4 xl:min-h-56 xl:justify-start 2xl:min-h-64 3xl:min-h-80">
           <div>
             <Subheading
               font="font-kalam"
@@ -23,28 +23,29 @@ const HeroSection = () => {
               <Heading
                 font="font-robotCondense"
                 fontWeight="font-bold"
-                styles="tracking-wider text-[#edb33c] dark:text-[#edb33c] drop-shadow-sm text-center xl:text-left"
+                styles="tracking-widest text-[#edb33c] dark:text-[#edb33c] drop-shadow-sm text-center xl:text-left"
               >
-                Chinjen.
+                Adrian
               </Heading>
             </div>
           </div>
         </div>
-        {/* COLUMN 2 */}
-        <div className="flex w-full justify-center border border-slate-300 p-4 xl:min-h-56 xl:justify-end 2xl:min-h-64 3xl:min-h-80">
-          <div className="pt-6 xl:max-w-60 xl:pt-0">
-            <Paragraph styles="xl:text-right text-center text-[#0d2f3f]" fontWeight="font-medium">
-              I create modern websites, both frontend and backend {width} x {height}.
+        {/* SECTION 2 */}
+        <div className="hidden w-full justify-center border border-slate-300 p-4 xl:min-h-56 xl:justify-start 2xl:min-h-64 3xl:min-h-80"></div>
+        {/* SECTION 3 */}
+        <div className="row-span-2 w-full justify-center border border-slate-300 p-4 xl:min-h-56 xl:justify-end 2xl:min-h-64 3xl:min-h-80">
+          <div className="flex flex-col gap-4 p-2">
+            <Paragraph styles="xl:text-left text-center text-[#0d2f3f] " fontWeight="font-medium">
+              I do websites for a living.
+            </Paragraph>
+            <Paragraph styles="xl:text-left text-center text-[#0d2f3f] " fontWeight="font-medium">
+              React for frontend, NodeJs for backend.
+            </Paragraph>
+            <Paragraph styles="xl:text-left text-center text-[#0d2f3f] " fontWeight="font-medium">
+              with a little bit of Typescript and some deployment.
             </Paragraph>
           </div>
         </div>
-      </div>
-      {/* SECTION 2 */}
-      <div className="mx-auto flex hidden max-w-7xl flex-row justify-center">
-        {/* COLUMN 1 */}
-        <div className="w-full border border-slate-300 p-4 xl:min-h-56 2xl:min-h-64 3xl:min-h-80"></div>
-        {/* COLUMN 2 */}
-        <div className="w-full border border-slate-300 p-4 xl:min-h-56 2xl:min-h-64 3xl:min-h-80"></div>
       </div>
     </>
   );
