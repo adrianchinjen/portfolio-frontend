@@ -5,9 +5,9 @@ import {
   RouterProvider
 } from 'react-router-dom';
 import RootLayout from '../components/layouts/Rootlayout';
-import PageBackground from '../components/pages/PageBackground';
-import About from '../components/pages/About';
 import Home from '../components/pages/Home';
+import About from '../components/pages/About';
+import PageBackground from '../components/pages/PageBackground';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
