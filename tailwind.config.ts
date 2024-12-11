@@ -25,7 +25,7 @@ export default {
     extend: {
       colors: {
         'df-dark': '#27272a',
-        'df-light': '#f5f5f4',
+        'df-light': '#f8f7f2',
         transparent: 'transparent',
         current: 'currentColor'
       },
