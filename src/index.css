@@ -44,6 +44,90 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'SchoolBell';
+  src: url('./assets/fonts/SchoolBell/Schoolbell-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kalam';
+  src: url('./assets/fonts/Kalam/Kalam-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kalam';
+  src: url('./assets/fonts/Kalam/Kalam-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kalam';
+  src: url('./assets/fonts/Kalam/Kalam-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoCondense';
+  src: url('./assets/fonts/Roboto/RobotoCondensed-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoCondense';
+  src: url('./assets/fonts/Roboto/RobotoCondensed-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoCondense';
+  src: url('./assets/fonts/Roboto/RobotoCondensed-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoCondense';
+  src: url('./assets/fonts/Roboto/RobotoCondensed-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoCondense';
+  src: url('./assets/fonts/Roboto/RobotoCondensed-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoCondense';
+  src: url('./assets/fonts/Roboto/RobotoCondensed-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoCondense';
+  src: url('./assets/fonts/Roboto/RobotoCondensed-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoCondense';
+  src: url('./assets/fonts/Roboto/RobotoCondensed-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   /* line-height: 1.5;

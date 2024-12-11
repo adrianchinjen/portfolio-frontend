@@ -31,11 +31,14 @@ export default {
       },
       fontFamily: {
         khand: ['Khand', 'sans-serif'],
-        roadrage: ['RoadRage', 'sans-serif']
+        roadrage: ['RoadRage', 'sans-serif'],
+        schoolbell: ['SchoolBell', 'sans-serif'],
+        kalam: ['Kalam', 'sans-serif'],
+        robotocondense: ['RobotoCondense', 'sans-serif']
       },
       minHeight: {
-        '93': '93.9vh',
-        '91': '91.8vh'
+        '93': '92.2vh',
+        '91': '89.9vh'
       }
     }
   },

@@ -1,6 +1,6 @@
-import CardBody from './text/CardBody';
-import CardSubTitle from './text/CardSubTitle';
-import CardTitle from './text/CardTitle';
+import CardBody from './text/card/CardBody';
+import CardSubTitle from './text/card/CardSubTitle';
+import CardTitle from './text/card/CardTitle';
 
 const Card = () => {
   return (
