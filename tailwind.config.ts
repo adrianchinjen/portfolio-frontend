@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss';
+import plugin from 'tailwindcss/plugin';
 
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
@@ -39,8 +40,19 @@ export default {
       minHeight: {
         '93': '92.2vh',
         '91': '89.9vh'
+      },
+      aspectRatio: {
+        square: '1 / 1'
       }
     }
   },
-  plugins: []
+  plugins: [
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        '.clip-bottom': {
+          'clip-path': 'polygon(0 0, 100% 0, 100% 70%, 0 70%)'
+        }
+      });
+    })
+  ]
 } satisfies Config;

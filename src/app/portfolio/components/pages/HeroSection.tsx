@@ -1,6 +1,7 @@
 import Heading from '../ui/text/global/Heading';
 import Paragraph from '../ui/text/global/Paragraph';
 import Subheading from '../ui/text/global/Subheading';
+import amg from '../../../../assets/img/yo-mi.png';
 
 const HeroSection = () => {
   // const width = window.innerWidth;
@@ -8,7 +9,15 @@ const HeroSection = () => {
   return (
     <>
       {/* SECTION 1 */}
-      <div className="mx-auto grid max-w-7xl grid-rows-2 pt-20 lg:pt-4 xl:grid-flow-col xl:pt-16 2xl:pt-10 3xl:pt-16">
+      <div className="relative mx-auto grid max-w-6xl grid-rows-2 pt-20 lg:pt-4 xl:grid-flow-col xl:pt-16 2xl:pt-10 3xl:pt-16">
+        {/* CIRCLE */}
+        <div className="absolute inset-0 top-1/3 m-auto aspect-square w-[38%] -translate-y-10 transform overflow-hidden rounded-full shadow-[0_10px_4px_#483c33] dark:shadow-[0_10px_4px_#edb33c]">
+          <img
+            src={amg} // Replace with your image URL
+            alt="Circle Image"
+            className="h-full w-full object-cover"
+          />
+        </div>
         {/* SECTION 1 */}
         <div className="w-full content-center justify-center border border-slate-300 p-4 xl:min-h-56 xl:content-start xl:justify-start 2xl:min-h-64 3xl:min-h-80">
           <div>
@@ -86,3 +95,4 @@ export default HeroSection;
 // #434242
 // old - #27272a
 // bg-zinc-800
+// brown shadow - 483c33
