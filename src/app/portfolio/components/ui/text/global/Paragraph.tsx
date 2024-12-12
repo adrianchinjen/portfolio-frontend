@@ -12,7 +12,7 @@ const Paragraph = ({
   styles
 }: ParagraphProps) => {
   return (
-    <p className={`${font} ${fontWeight} text-lg subpixel-antialiased ${styles}`}>{children}</p>
+    <p className={`${font} ${fontWeight} text-sm subpixel-antialiased ${styles}`}>{children}</p>
   );
 };
 
