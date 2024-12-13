@@ -1,8 +1,8 @@
 import Heading from '../ui/text/global/Heading';
 import Paragraph from '../ui/text/global/Paragraph';
 import Subheading from '../ui/text/global/Subheading';
-import mi from '../../../../assets/img/yo-mi.png';
-import line from '../../../../assets/img/line.png';
+import HeroImage from '../ui/hero/HeroImage';
+import WigglyArrow from '../ui/hero/WigglyArrow';
 
 const HeroSection = () => {
   // const width = window.innerWidth;
@@ -10,23 +10,11 @@ const HeroSection = () => {
   return (
     <>
       {/* SECTION 1 */}
-      <div className="relative mx-auto grid max-w-6xl grid-rows-2 pt-20 lg:pt-4 xl:grid-flow-col xl:pt-16 2xl:pt-10 3xl:pt-16">
-        {/* CIRCLE */}
-        <div className="absolute inset-0 top-1/3 m-auto aspect-square w-[38%] -translate-y-10 transform overflow-hidden rounded-full shadow-[0_10px_4px_#483c33] dark:shadow-[0_10px_4px_#edb33c]">
-          <img
-            src={mi} // Replace with your image URL
-            alt="Circle Image"
-            className="h-full w-full object-cover"
-          />
-        </div>
-        {/* LINE */}
-        <img
-          src={line} // Replace with your image URL
-          alt="Floating Hero"
-          className="absolute left-[10%] top-[50%] w-[30%] max-w-xs -translate-y-1/2 transform object-contain md:max-w-md"
-        />
+      <div className="relative mx-auto max-w-6xl pt-20 lg:pt-4 xl:grid xl:grid-flow-col xl:grid-rows-2 xl:pt-16 2xl:px-7 2xl:pt-10 3xl:pt-16">
+        <HeroImage />
+        <WigglyArrow />
         {/* SECTION 1 */}
-        <div className="w-full content-center justify-center border border-slate-300 p-4 xl:min-h-56 xl:content-start xl:justify-start 2xl:min-h-64 3xl:min-h-80">
+        <div className="w-full justify-center border border-slate-300 p-4 xl:min-h-64 xl:content-start xl:justify-start 2xl:min-h-64 3xl:min-h-80">
           <div>
             <Subheading
               font="font-kalam"
@@ -35,15 +23,13 @@ const HeroSection = () => {
             >
               Yo! I Am
             </Subheading>
-            <div className="mt-2">
-              <Heading
-                font="font-robotCondense"
-                fontWeight="font-bold"
-                styles="tracking-widest text-[#edb33c] dark:text-[#edb33c] drop-shadow-sm text-center xl:text-left"
-              >
-                Adrian
-              </Heading>
-            </div>
+            <Heading
+              font="font-robotCondense"
+              fontWeight="font-bold"
+              styles="tracking-widest text-[#edb33c] dark:text-[#edb33c] drop-shadow-sm text-center xl:text-left mt-2"
+            >
+              Adrian
+            </Heading>
           </div>
         </div>
         {/* SECTION 2 */}
