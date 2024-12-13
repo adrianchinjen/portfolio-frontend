@@ -7,21 +7,11 @@ export default {
   theme: {
     screens: {
       sm: '640px',
-      // => @media (min-width: 640px) { ... }
-
       md: '768px',
-      // => @media (min-width: 768px) { ... }
-
       lg: '1024px',
-      // => @media (min-width: 1024px) { ... }
-
       xl: '1280px',
-      // => @media (min-width: 1280px) { ... }
-
       '2xl': '1536px',
-      // => @media (min-width: 1536px) { ... }
       '3xl': '1920px'
-      // => @media (min-width: 1920px) { ... }
     },
     extend: {
       colors: {
@@ -38,11 +28,16 @@ export default {
         robotocondense: ['RobotoCondense', 'sans-serif']
       },
       minHeight: {
-        '93': '92.2vh',
-        '91': '89.9vh'
+        '91': '89.9vh',
+        '93': '92.2vh'
       },
       aspectRatio: {
         square: '1 / 1'
+      },
+      borderRadius: {
+        lg: 'var(--radius)',
+        md: 'calc(var(--radius) - 2px)',
+        sm: 'calc(var(--radius) - 4px)'
       }
     }
   },

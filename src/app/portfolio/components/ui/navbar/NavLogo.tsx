@@ -7,7 +7,7 @@ interface LogoProps {
 const NavLogo: React.FC<LogoProps> = ({ children }) => {
   return (
     <div className="flex content-center justify-items-center">
-      <h1 className="font-roadrage text-5xl">{children}</h1>
+      <h1 className="font-roadrage text-4xl">{children}</h1>
     </div>
   );
 };

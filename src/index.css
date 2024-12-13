@@ -161,4 +161,7 @@
   li {
     @apply text-stone-700 dark:text-stone-300;
   }
+  :root {
+    --radius: 0.5rem;
+  }
 }
