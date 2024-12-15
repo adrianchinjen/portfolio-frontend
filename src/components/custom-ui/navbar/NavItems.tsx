@@ -1,5 +1,4 @@
 import { NavLink } from 'react-router-dom';
-import DarkModeToggle from '../../DarkModeToggle';
 
 interface NavListProps {
   isOpen: boolean;
@@ -40,9 +39,6 @@ const NavItems = ({ isOpen }: NavListProps) => {
         </li>
         <li className="w-full cursor-pointer list-none p-4 text-center transition-all hover:bg-sky-400 hover:text-white">
           Contact
-        </li>
-        <li className="w-full cursor-pointer list-none p-4 text-center transition-all hover:bg-sky-400 hover:text-white">
-          <DarkModeToggle />
         </li>
       </ul>
     </>

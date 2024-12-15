@@ -1,9 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
-import Heading from '../ui/text/global/Heading';
-import Paragraph from '../ui/text/global/Paragraph';
-import Subheading from '../ui/text/global/Subheading';
-import HeroImage from '../ui/hero/HeroImage';
-import WigglyArrow from '../ui/hero/WigglyArrow';
+import HeroImage from '@/components/custom-ui/hero/HeroImage';
+import WigglyArrow from '@/components/custom-ui/hero/WigglyArrow';
+import Heading from '@/components/custom-ui/text/global/Heading';
+import Paragraph from '@/components/custom-ui/text/global/Paragraph';
+import Subheading from '@/components/custom-ui/text/global/Subheading';
 import { Card } from '@/components/ui/card';
 
 const HeroSection = () => {

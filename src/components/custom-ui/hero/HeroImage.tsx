@@ -1,4 +1,4 @@
-import mi from '../../../../../assets/img/yo-miii.png';
+import mi from '../../../assets/img/yo-miii.png';
 
 const HeroImage = () => {
   return (

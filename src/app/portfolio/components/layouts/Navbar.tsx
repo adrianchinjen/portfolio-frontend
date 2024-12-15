@@ -1,9 +1,9 @@
 import { AiOutlineMenu } from 'react-icons/ai';
 import { useState } from 'react';
 import { IoCloseSharp } from 'react-icons/io5';
-import NavLogo from '../ui/navbar/NavLogo';
-import NavItems from '../ui/navbar/NavItems';
 import { ModeToggle } from '@/components/mode-toggle';
+import NavLogo from '@/components/custom-ui/navbar/NavLogo';
+import NavItems from '@/components/custom-ui/navbar/NavItems';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
