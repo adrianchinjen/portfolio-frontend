@@ -1,9 +1,9 @@
 import { AiOutlineMenu } from 'react-icons/ai';
 import { useState } from 'react';
-import DarkModeToggle from '../DarkModeToggle';
 import { IoCloseSharp } from 'react-icons/io5';
-import NavLogo from '../ui/navbar/NavLogo';
-import NavItems from '../ui/navbar/NavItems';
+import { ModeToggle } from '@/components/mode-toggle';
+import NavLogo from '@/components/custom-ui/navbar/NavLogo';
+import NavItems from '@/components/custom-ui/navbar/NavItems';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,13 +15,7 @@ const Navbar = () => {
       <NavItems isOpen={isOpen} />
 
       <div className="relative hidden items-center justify-center gap-3 md:flex">
-        <DarkModeToggle />
-        {/* <IoMdSearch className="absolute left-2 top-2.5 text-2xl text-gray-500" />
-        <input
-          type="text"
-          placeholder="Search..."
-          className="border-blue-3-- rounded-xl border-2 py-2 pl-10 focus:bg-slate-100 focus:outline-sky-500"
-        /> */}
+        <ModeToggle />
       </div>
 
       {isOpen ? (

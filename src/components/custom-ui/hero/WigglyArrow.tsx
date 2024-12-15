@@ -1,4 +1,4 @@
-import line from '../../../../../assets/img/line.png';
+import line from '../../../assets/img/line.png';
 
 const WigglyArrow = () => {
   return (
