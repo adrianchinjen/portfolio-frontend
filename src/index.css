@@ -145,7 +145,7 @@
 
 @layer base {
   body {
-    @apply text-stone-700 dark:text-stone-300; /* Default text color */
+    @apply text-[#0d2f3f] dark:text-stone-300; /* Default text color */
   }
 
   /* Optionally target headings for consistency */
@@ -159,7 +159,7 @@
   span,
   div,
   li {
-    @apply text-stone-700 dark:text-stone-300;
+    @apply text-[#0d2f3f] dark:text-stone-300;
   }
   :root {
     --radius: 0.5rem;

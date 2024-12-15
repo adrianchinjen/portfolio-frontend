@@ -3,10 +3,11 @@ import type React from 'react';
 
 interface CardTitleProps {
   children: ReactNode;
+  className?: string;
 }
 
-const CardTitle: React.FC<CardTitleProps> = ({ children }) => {
-  return <p className="text-xl font-semibold text-neutral-600 dark:text-neutral-400">{children}</p>;
+const CardTitle: React.FC<CardTitleProps> = ({ children, className }) => {
+  return <p className={`text-md font-semibold ${className}`}>{children}</p>;
 };
 
 export default CardTitle;
