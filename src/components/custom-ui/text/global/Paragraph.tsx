@@ -2,17 +2,17 @@ interface ParagraphProps {
   children: React.ReactNode;
   font?: string;
   fontWeight?: string;
-  styles?: string;
+  className?: string;
 }
 
 const Paragraph = ({
   children,
   font = 'font-sans',
   fontWeight = 'font-normal',
-  styles
+  className
 }: ParagraphProps) => {
   return (
-    <p className={`${font} ${fontWeight} text-sm subpixel-antialiased ${styles}`}>{children}</p>
+    <p className={`${font} ${fontWeight} text-sm subpixel-antialiased ${className}`}>{children}</p>
   );
 };
 
