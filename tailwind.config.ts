@@ -18,6 +18,7 @@ export default {
         'df-dark': '#0d2f3f',
         'df-light': '#f8f7f1',
         'df-yellow': '#edb33c',
+        'df-teal': '#286f6c',
         transparent: 'transparent',
         current: 'currentColor'
       },
