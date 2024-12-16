@@ -17,6 +17,7 @@ export default {
       colors: {
         'df-dark': '#0d2f3f',
         'df-light': '#f8f7f1',
+        'df-yellow': '#edb33c',
         transparent: 'transparent',
         current: 'currentColor'
       },

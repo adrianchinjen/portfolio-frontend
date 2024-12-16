@@ -3,12 +3,13 @@ import type React from 'react';
 
 interface CardBodyProps {
   children: ReactNode;
+  className?: string;
 }
 
-const CardBody: React.FC<CardBodyProps> = ({ children }) => {
+const CardBody: React.FC<CardBodyProps> = ({ children, className }) => {
   return (
     <div className="mt-3">
-      <p className="text-sm text-neutral-600 antialiased dark:text-neutral-400">{children}</p>
+      <p className={`text-sm antialiased ${className}`}>{children}</p>
     </div>
   );
 };
