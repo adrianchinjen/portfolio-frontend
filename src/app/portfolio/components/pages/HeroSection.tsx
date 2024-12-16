@@ -22,7 +22,7 @@ const HeroSection = () => {
             <Subheading
               font="font-kalam"
               fontWeight="font-bold"
-              className="text-center text-[#0d2f3f] xl:text-left"
+              className="text-center xl:text-left"
             >
               Yo! I'm
             </Subheading>
@@ -39,13 +39,13 @@ const HeroSection = () => {
         <div className="hidden w-full content-end p-4 xl:block xl:min-h-56 xl:justify-start 2xl:min-h-64 3xl:min-h-80">
           <div className="flex gap-3">
             <div className="content-center justify-center">
-              <Heading fontWeight="font-bold" className="text-[#0d2f3f]">
+              <Heading fontWeight="font-bold" className="">
                 04
               </Heading>
             </div>
             <div className="flex flex-col justify-center pt-2">
-              <Paragraph className="text-sm tracking-wider text-[#0d2f3f]">YEARS OF</Paragraph>
-              <Paragraph className="text-sm tracking-wider text-[#0d2f3f]">EXPERIENCE</Paragraph>
+              <Paragraph className="text-sm tracking-wider">YEARS OF</Paragraph>
+              <Paragraph className="text-sm tracking-wider">EXPERIENCE</Paragraph>
             </div>
           </div>
         </div>
@@ -56,13 +56,11 @@ const HeroSection = () => {
               <Card className="rounded-xl border-none bg-white p-3 shadow-md dark:bg-df-light">
                 <div className="">
                   <Paragraph
-                    className="text-center text-[#0d2f3f] dark:text-[#0d2f3f] xl:text-left"
+                    className="text-center dark:text-[#0d2f3f] xl:text-left"
                     fontWeight="font-medium"
                   >
                     I do websites for a living
-                    <span className="block text-[#0d2f3f] dark:text-[#0d2f3f] xl:hidden">
-                      For about 4 years
-                    </span>
+                    <span className="block dark:text-[#0d2f3f] xl:hidden">For about 4 years</span>
                   </Paragraph>
                 </div>
               </Card>
@@ -71,7 +69,7 @@ const HeroSection = () => {
               <Card className="rounded-xl border-none bg-white p-3 shadow-md dark:bg-df-light">
                 <div className="">
                   <Paragraph
-                    className="text-center text-[#0d2f3f] dark:text-[#0d2f3f] xl:text-right"
+                    className="text-center dark:text-[#0d2f3f] xl:text-right"
                     fontWeight="font-medium"
                   >
                     React for frontend, NodeJs for backend
@@ -82,14 +80,11 @@ const HeroSection = () => {
             <div className="flex-1 xl:content-end xl:justify-items-end">
               <Card className="rounded-xl border-none bg-white p-3 shadow-md dark:bg-df-light">
                 <div className="">
-                  <Paragraph
-                    className="text-center text-[#0d2f3f] dark:text-[#0d2f3f]"
-                    fontWeight="font-medium"
-                  >
+                  <Paragraph className="text-center dark:text-[#0d2f3f]" fontWeight="font-medium">
                     And little bit of Typescript and deployment
                   </Paragraph>
                   <Paragraph
-                    className="hidden text-center text-[#0d2f3f] dark:text-[#0d2f3f]"
+                    className="hidden text-center dark:text-[#0d2f3f]"
                     fontWeight="font-medium"
                   >
                     Like this one
