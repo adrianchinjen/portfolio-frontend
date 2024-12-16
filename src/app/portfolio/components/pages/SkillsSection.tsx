@@ -16,7 +16,7 @@ const SkillsSection = () => {
     return (
       <Card
         key={index}
-        className="my-auto flex w-fit flex-row content-center items-center gap-4 rounded-sm border-none bg-df-teal p-3 shadow-sm dark:bg-[#2d2d2f] dark:shadow-df-yellow"
+        className="my-auto flex w-fit flex-row content-center items-center gap-3 rounded-sm border-none bg-df-teal p-3 shadow-sm dark:bg-[#2d2d2f] dark:shadow-df-yellow"
       >
         {item.icon}
         <CardDescription className="text-df-light dark:text-df-light">{item.name}</CardDescription>
@@ -28,7 +28,7 @@ const SkillsSection = () => {
     return (
       <Card
         key={index}
-        className="my-auto flex w-fit flex-row content-center items-center gap-4 rounded-sm border-none bg-df-teal p-3 shadow-sm dark:bg-[#2d2d2f] dark:shadow-df-yellow"
+        className="my-auto flex w-fit flex-row content-center items-center gap-3 rounded-sm border-none bg-df-teal p-3 shadow-sm dark:bg-[#2d2d2f] dark:shadow-df-yellow"
       >
         {item.icon}
         <CardDescription className="text-df-light dark:text-df-light">{item.name}</CardDescription>
@@ -40,7 +40,7 @@ const SkillsSection = () => {
     return (
       <Card
         key={index}
-        className="my-auto flex w-fit flex-row content-center items-center gap-4 rounded-sm border-none bg-df-teal p-3 shadow-sm dark:bg-[#2d2d2f] dark:shadow-df-yellow"
+        className="my-auto flex w-fit flex-row content-center items-center gap-3 rounded-sm border-none bg-df-teal p-3 shadow-sm dark:bg-[#2d2d2f] dark:shadow-df-yellow"
       >
         {item.icon}
         <CardDescription className="text-df-light dark:text-df-light">{item.name}</CardDescription>
@@ -52,7 +52,7 @@ const SkillsSection = () => {
     return (
       <Card
         key={index}
-        className="my-auto flex w-fit flex-row content-center items-center gap-4 rounded-sm border-none bg-df-teal p-3 shadow-sm dark:bg-[#2d2d2f] dark:shadow-df-yellow"
+        className="my-auto flex w-fit flex-row content-center items-center gap-3 rounded-sm border-none bg-df-teal p-3 shadow-sm dark:bg-[#2d2d2f] dark:shadow-df-yellow"
       >
         {item.icon}
         <CardDescription className="text-df-light dark:text-df-light">{item.name}</CardDescription>
@@ -67,19 +67,19 @@ const SkillsSection = () => {
       </div>
       <div className="relative z-0 mx-auto flex flex-col gap-4 pb-10 sm:max-w-md md:max-w-full xl:max-w-5xl 2xl:max-w-6xl">
         <Subheading className="text-xl lg:text-center">Featured</Subheading>
-        <div className="mt-2 flex flex-row flex-wrap gap-3 lg:mx-auto lg:max-w-xl lg:justify-center">
+        <div className="mt-2 flex flex-row flex-wrap gap-2 lg:mx-auto lg:max-w-xl lg:justify-center">
           {featuredSkills[0].featured.map(renderFeatured)}
         </div>
         <Subheading className="mt-7 text-xl lg:text-center">Frontend</Subheading>
-        <div className="mt-2 flex flex-row flex-wrap gap-3 lg:mx-auto lg:max-w-xl lg:justify-center">
+        <div className="mt-2 flex flex-row flex-wrap gap-2 lg:mx-auto lg:max-w-xl lg:justify-center">
           {frontendSkills[0].frontend.map(renderFrontend)}
         </div>
         <Subheading className="mt-7 text-xl lg:text-center">Backend</Subheading>
-        <div className="mt-2 flex flex-row flex-wrap gap-3 lg:mx-auto lg:max-w-xl lg:justify-center">
+        <div className="mt-2 flex flex-row flex-wrap gap-2 lg:mx-auto lg:max-w-xl lg:justify-center">
           {backendSkills[0].backend.map(renderBackend)}
         </div>
         <Subheading className="mt-7 text-xl lg:text-center">Others</Subheading>
-        <div className="mt-2 flex flex-row flex-wrap gap-3 lg:mx-auto lg:max-w-xl lg:justify-center">
+        <div className="mt-2 flex flex-row flex-wrap gap-2 lg:mx-auto lg:max-w-xl lg:justify-center">
           {otherSkills[0].others.map(renderOthers)}
         </div>
       </div>
