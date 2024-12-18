@@ -20,6 +20,16 @@ export const leftVariants = {
   }
 };
 
+// Left content animation: slide in from the left starting from the last child
+export const leftReverseVariants = {
+  hidden: { opacity: 0, x: -200 }, // Start off-screen to the left
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.5, ease: 'easeOut', staggerChildren: 0.3, staggerDirection: -1 }
+  }
+};
+
 // Right content animation: slide in from the right
 export const rightVariants = {
   hidden: { opacity: 0, x: 200 }, // Start off-screen to the right
@@ -27,6 +37,16 @@ export const rightVariants = {
     opacity: 1,
     x: 0,
     transition: { duration: 0.5, ease: 'easeOut', staggerChildren: 0.3 }
+  }
+};
+
+// Right content animation: slide in from the right starting from the last child
+export const rightReverseVariants = {
+  hidden: { opacity: 0, x: 200 }, // Start off-screen to the right
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.5, ease: 'easeOut', staggerChildren: 0.3, staggerDirection: -1 }
   }
 };
 
@@ -65,4 +85,14 @@ export const bottomVariants = {
     y: 0,
     transition: { duration: 0.3, ease: 'easeOut', staggerChildren: 0.3 }
   }
+};
+
+// Child animation: fade-in
+export const itemVariants = {
+  hidden: { opacity: 0, y: 20 }, // Start hidden and slightly below
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.4, ease: 'easeOut', staggerChildren: 0.3 }
+  } // Animate in
 };
