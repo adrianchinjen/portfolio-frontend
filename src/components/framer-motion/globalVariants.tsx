@@ -4,7 +4,7 @@ export const containerVariants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.3, // Delay between children
+      staggerChildren: 0.1, // Delay between children
       when: 'beforeChildren'
     }
   }
@@ -20,16 +20,6 @@ export const leftVariants = {
   }
 };
 
-// Left content animation: slide in from the left starting from the last child
-export const leftReverseVariants = {
-  hidden: { opacity: 0, x: -200 }, // Start off-screen to the left
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 0.3, ease: 'easeOut', staggerChildren: 0.1, staggerDirection: -1 }
-  }
-};
-
 // Right content animation: slide in from the right
 export const rightVariants = {
   hidden: { opacity: 0, x: 200 }, // Start off-screen to the right
@@ -40,9 +30,19 @@ export const rightVariants = {
   }
 };
 
+// Left content animation: slide in from the left starting from the last child
+export const leftReverseVariants = {
+  hidden: { opacity: 0, x: 200 }, // Start off-screen to the left
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.3, ease: 'easeOut', staggerChildren: 0.1, staggerDirection: -1 }
+  }
+};
+
 // Right content animation: slide in from the right starting from the last child
 export const rightReverseVariants = {
-  hidden: { opacity: 0, x: 200 }, // Start off-screen to the right
+  hidden: { opacity: 0, x: -200 }, // Start off-screen to the right
   visible: {
     opacity: 1,
     x: 0,
