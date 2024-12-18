@@ -15,7 +15,7 @@ import {
   containerVariants,
   itemVariants,
   leftVariants,
-  rightReverseVariants
+  rightVariants
 } from '@/components/framer-motion/globalVariants';
 
 const ExperienceSection = () => {
@@ -171,33 +171,33 @@ const ExperienceSection = () => {
                 </CardBody>
               </CardContent>
             </motion.div>
-            <motion.div variants={rightReverseVariants}>
+            <motion.div variants={leftVariants}>
               <CardFooter className="flex flex-row flex-wrap justify-center gap-4">
-                <motion.div variants={rightReverseVariants}>
+                <motion.div variants={rightVariants}>
                   <IoLogoJavascript className="h-6 w-6" />
                 </motion.div>
-                <motion.div variants={rightReverseVariants}>
+                <motion.div variants={rightVariants}>
                   <BiLogoTypescript className="h-6 w-6" />
                 </motion.div>
-                <motion.div variants={rightReverseVariants}>
+                <motion.div variants={rightVariants}>
                   <RiReactjsLine className="h-6 w-6" />
                 </motion.div>
-                <motion.div variants={rightReverseVariants}>
+                <motion.div variants={rightVariants}>
                   <SiMongodb className="h-6 w-6" />
                 </motion.div>
-                <motion.div variants={rightReverseVariants}>
+                <motion.div variants={rightVariants}>
                   <DiNodejs className="h-6 w-6" />
                 </motion.div>
-                <motion.div variants={rightReverseVariants}>
+                <motion.div variants={rightVariants}>
                   <BiLogoPostgresql className="h-6 w-6" />
                 </motion.div>
-                <motion.div variants={rightReverseVariants}>
+                <motion.div variants={rightVariants}>
                   <FaAws className="h-6 w-6" />
                 </motion.div>
-                <motion.div variants={rightReverseVariants}>
+                <motion.div variants={rightVariants}>
                   <GrDocker className="h-6 w-6" />
                 </motion.div>
-                <motion.div variants={rightReverseVariants}>
+                <motion.div variants={rightVariants}>
                   <SiJquery className="h-6 w-6" />
                 </motion.div>
               </CardFooter>
