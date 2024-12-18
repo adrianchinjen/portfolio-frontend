@@ -11,25 +11,23 @@ import { IoLogoJavascript } from 'react-icons/io5';
 import { RiReactjsLine } from 'react-icons/ri';
 import { SiJquery, SiMongodb, SiMysql, SiNestjs } from 'react-icons/si';
 import { motion } from 'motion/react';
-import {
-  containerVariants,
-  itemVariants,
-  leftReverseVariants,
-  rightVariants
-} from '@/components/framer-motion/globalVariants';
 
 // Parent container animation: stagger children
-// const containerVariants = {
-//   hidden: { opacity: 0 },
-//   visible: {
-//     opacity: 1,
-//     transition: {
-//       staggerChildren: 0.4 // Delay between child animations
-//     }
-//   }
-// };
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.4 // Delay between child animations
+    }
+  }
+};
 
 // Child animation: fade-in
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 }, // Start hidden and slightly below
+  visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: 'easeOut' } } // Animate in
+};
 
 const ExperienceSection = () => {
   return (
@@ -75,10 +73,8 @@ const ExperienceSection = () => {
                       </motion.li>
                     </ul>
                     <motion.div variants={itemVariants}>
-                      <motion.div variants={itemVariants}>
-                        <CardSubTitle className="mt-5 font-semibold">Details</CardSubTitle>
-                      </motion.div>
-                      <motion.div variants={itemVariants} className="adrian mt-2 italic">
+                      <CardSubTitle className="mt-5 font-semibold">Details</CardSubTitle>
+                      <div className="adrian mt-2 italic">
                         Collaborated as a member of an Agile team, contributing to backend codebases
                         for the eForms project and both frontend and backend development for other
                         initiatives. Actively participated in code reviews, provided constructive
@@ -86,38 +82,22 @@ const ExperienceSection = () => {
                         Organized and prioritized tasks on Trello boards in alignment with system
                         requirements and deadline, facilitating efficient workflow management and
                         project execution.
-                      </motion.div>
+                      </div>
                     </motion.div>
                   </motion.div>
                 </CardBody>
               </CardContent>
             </motion.div>
-            <motion.div variants={leftReverseVariants}>
+            <motion.div variants={itemVariants}>
               <CardFooter className="flex flex-row flex-wrap justify-center gap-4">
-                <motion.div variants={leftReverseVariants}>
-                  <IoLogoJavascript className="h-6 w-6" />
-                </motion.div>
-                <motion.div variants={leftReverseVariants}>
-                  <BiLogoTypescript className="h-6 w-6" />
-                </motion.div>
-                <motion.div variants={leftReverseVariants}>
-                  <RiReactjsLine className="h-6 w-6" />
-                </motion.div>
-                <motion.div variants={leftReverseVariants}>
-                  <SiNestjs className="h-6 w-6" />
-                </motion.div>
-                <motion.div variants={leftReverseVariants}>
-                  <SiMongodb className="h-6 w-6" />
-                </motion.div>
-                <motion.div variants={leftReverseVariants}>
-                  <AiOutlineJava className="h-6 w-6" />
-                </motion.div>
-                <motion.div variants={leftReverseVariants}>
-                  <SiMysql className="h-6 w-6" />
-                </motion.div>
-                <motion.div variants={leftReverseVariants}>
-                  <GrDocker className="h-6 w-6" />
-                </motion.div>
+                <IoLogoJavascript className="h-6 w-6" />
+                <BiLogoTypescript className="h-6 w-6" />
+                <RiReactjsLine className="h-6 w-6" />
+                <SiNestjs className="h-6 w-6" />
+                <SiMongodb className="h-6 w-6" />
+                <AiOutlineJava className="h-6 w-6" />
+                <SiMysql className="h-6 w-6" />
+                <GrDocker className="h-6 w-6" />
               </CardFooter>
             </motion.div>
           </Card>
@@ -159,10 +139,8 @@ const ExperienceSection = () => {
                       </motion.li>
                     </ul>
                     <motion.div variants={itemVariants}>
-                      <motion.div variants={itemVariants}>
-                        <CardSubTitle className="mt-5 font-semibold">Details</CardSubTitle>
-                      </motion.div>
-                      <motion.div variants={itemVariants} className="adrian mt-2 italic">
+                      <CardSubTitle className="mt-5 font-semibold">Details</CardSubTitle>
+                      <div className="adrian mt-2 italic">
                         Learning Hub was initiated and developed from the ground up, where I
                         contributed to both frontend and backend codebases and gathered information
                         to define system requirements. The platform includes applications such as a
@@ -171,41 +149,23 @@ const ExperienceSection = () => {
                         participated in code reviews, managed pull requests, and ensured code
                         quality. I also assisted in implementing CI/CD pipelines and deployment
                         processes, providing ongoing user support.
-                      </motion.div>
+                      </div>
                     </motion.div>
                   </motion.div>
                 </CardBody>
               </CardContent>
             </motion.div>
-            <motion.div variants={rightVariants}>
+            <motion.div variants={itemVariants}>
               <CardFooter className="flex flex-row flex-wrap justify-center gap-4">
-                <motion.div variants={rightVariants}>
-                  <IoLogoJavascript className="h-6 w-6" />
-                </motion.div>
-                <motion.div variants={rightVariants}>
-                  <BiLogoTypescript className="h-6 w-6" />
-                </motion.div>
-                <motion.div variants={rightVariants}>
-                  <RiReactjsLine className="h-6 w-6" />
-                </motion.div>
-                <motion.div variants={rightVariants}>
-                  <DiNodejs className="h-6 w-6" />
-                </motion.div>
-                <motion.div variants={rightVariants}>
-                  <SiMongodb className="h-6 w-6" />
-                </motion.div>
-                <motion.div variants={rightVariants}>
-                  <BiLogoPostgresql className="h-6 w-6" />
-                </motion.div>
-                <motion.div variants={rightVariants}>
-                  <FaAws className="h-6 w-6" />
-                </motion.div>
-                <motion.div variants={rightVariants}>
-                  <GrDocker className="h-6 w-6" />
-                </motion.div>
-                <motion.div variants={rightVariants}>
-                  <SiJquery className="h-6 w-6" />
-                </motion.div>
+                <IoLogoJavascript className="h-6 w-6" />
+                <BiLogoTypescript className="h-6 w-6" />
+                <RiReactjsLine className="h-6 w-6" />
+                <SiMongodb className="h-6 w-6" />
+                <DiNodejs className="h-6 w-6" />
+                <BiLogoPostgresql className="h-6 w-6" />
+                <FaAws className="h-6 w-6" />
+                <GrDocker className="h-6 w-6" />
+                <SiJquery className="h-6 w-6" />
               </CardFooter>
             </motion.div>
           </Card>

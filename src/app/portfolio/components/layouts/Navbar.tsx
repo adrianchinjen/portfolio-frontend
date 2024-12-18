@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     // <div className="absolute h-full w-full bg-gradient-to-r from-blue-400 to-emerald-400">
-    <header className="fixed top-0 flex h-20 w-screen items-center justify-between border border-slate-800 bg-df-light px-8 text-black shadow-md dark:bg-zinc-800 md:px-32 xl:h-auto">
+    <header className="fixed top-0 flex h-auto w-full items-center justify-between bg-df-light px-8 text-black shadow-md dark:bg-zinc-800 md:px-32">
       <NavLogo>A | CHINJEN.</NavLogo>
       <NavItems isOpen={isOpen} />
 
