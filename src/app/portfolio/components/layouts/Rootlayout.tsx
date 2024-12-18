@@ -9,8 +9,7 @@ const Footer = lazy(() => import('../pages/Footer'));
 
 const RootLayout = () => {
   return (
-    <div>
-      {/* Lazy-loaded sections */}
+    <div className="border border-slate-900">
       <Suspense fallback={<div>Loading...</div>}>
         <div className="relative z-50">
           <NavBar />
