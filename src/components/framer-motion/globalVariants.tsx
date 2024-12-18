@@ -22,7 +22,7 @@ export const leftVariants = {
 
 // Left content animation: slide in from the left starting from the last child
 export const leftReverseVariants = {
-  hidden: { opacity: 0, x: -200 }, // Start off-screen to the left
+  hidden: { opacity: 0, x: 200 }, // Start off-screen to the left
   visible: {
     opacity: 1,
     x: 0,
@@ -42,7 +42,7 @@ export const rightVariants = {
 
 // Right content animation: slide in from the right starting from the last child
 export const rightReverseVariants = {
-  hidden: { opacity: 0, x: 200 }, // Start off-screen to the right
+  hidden: { opacity: 0, x: -200 }, // Start off-screen to the right
   visible: {
     opacity: 1,
     x: 0,
