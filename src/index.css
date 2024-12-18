@@ -7,6 +7,7 @@
   src: url('./assets/fonts/RoadRage/RoadRage-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -14,6 +15,7 @@
   src: url('./assets/fonts/Khand/Khand-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -21,6 +23,7 @@
   src: url('./assets/fonts/Khand/Khand-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -28,6 +31,7 @@
   src: url('./assets/fonts/Khand/Khand-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -35,6 +39,7 @@
   src: url('./assets/fonts/Khand/Khand-SemiBold.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -42,6 +47,7 @@
   src: url('./assets/fonts/Khand/Khand-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -49,6 +55,7 @@
   src: url('./assets/fonts/SchoolBell/Schoolbell-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -56,6 +63,7 @@
   src: url('./assets/fonts/Kalam/Kalam-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -63,6 +71,7 @@
   src: url('./assets/fonts/Kalam/Kalam-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -70,6 +79,7 @@
   src: url('./assets/fonts/Kalam/Kalam-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -77,6 +87,7 @@
   src: url('./assets/fonts/Roboto/RobotoCondensed-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -84,6 +95,7 @@
   src: url('./assets/fonts/Roboto/RobotoCondensed-Thin.ttf') format('truetype');
   font-weight: 100;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -91,6 +103,7 @@
   src: url('./assets/fonts/Roboto/RobotoCondensed-ExtraLight.ttf') format('truetype');
   font-weight: 200;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -98,6 +111,7 @@
   src: url('./assets/fonts/Roboto/RobotoCondensed-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -105,6 +119,7 @@
   src: url('./assets/fonts/Roboto/RobotoCondensed-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -112,6 +127,7 @@
   src: url('./assets/fonts/Roboto/RobotoCondensed-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -119,6 +135,7 @@
   src: url('./assets/fonts/Roboto/RobotoCondensed-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -126,6 +143,7 @@
   src: url('./assets/fonts/Roboto/RobotoCondensed-ExtraBold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
+  font-display: swap;
 }
 
 :root {

@@ -91,7 +91,7 @@ const SkillsSection = () => {
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.8 }}
+        viewport={{ once: true, amount: 0.1 }}
         className="relative z-0 mx-auto flex flex-col gap-4 pb-10 sm:max-w-md md:max-w-full xl:max-w-5xl 2xl:max-w-6xl"
       >
         <motion.div variants={centerVariants}>
