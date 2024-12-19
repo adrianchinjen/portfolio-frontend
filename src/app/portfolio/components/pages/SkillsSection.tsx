@@ -74,7 +74,11 @@ const SkillsSection = forwardRef<HTMLDivElement, object>((props, ref) => {
 
   return (
     <>
-      <div ref={ref} className="mb-20 mt-40 flex justify-center text-5xl font-bold drop-shadow-md">
+      <div
+        ref={ref}
+        {...props}
+        className="mb-20 mt-40 flex justify-center text-5xl font-bold drop-shadow-md"
+      >
         Skills
       </div>
       <motion.div
