@@ -16,7 +16,7 @@ export const leftVariants = {
   visible: {
     opacity: 1,
     x: 0,
-    transition: { duration: 0.3, ease: 'easeOut', staggerChildren: 0.1 }
+    transition: { duration: 0.3, ease: 'easeOut', staggerChildren: 0.2 }
   }
 };
 
@@ -26,7 +26,7 @@ export const rightVariants = {
   visible: {
     opacity: 1,
     x: 0,
-    transition: { duration: 0.3, ease: 'easeOut', staggerChildren: 0.1 }
+    transition: { duration: 0.3, ease: 'easeOut', staggerChildren: 0.2 }
   }
 };
 
@@ -36,7 +36,7 @@ export const leftReverseVariants = {
   visible: {
     opacity: 1,
     x: 0,
-    transition: { duration: 0.3, ease: 'easeOut', staggerChildren: 0.1, staggerDirection: -1 }
+    transition: { duration: 0.3, ease: 'easeOut', staggerChildren: 0.2, staggerDirection: -1 }
   }
 };
 
@@ -46,7 +46,7 @@ export const rightReverseVariants = {
   visible: {
     opacity: 1,
     x: 0,
-    transition: { duration: 0.3, ease: 'easeOut', staggerChildren: 0.1, staggerDirection: -1 }
+    transition: { duration: 0.3, ease: 'easeOut', staggerChildren: 0.2, staggerDirection: -1 }
   }
 };
 
@@ -55,7 +55,7 @@ export const centerVariants = {
   hidden: { opacity: 0 }, // Start smaller and invisible
   visible: {
     opacity: 1,
-    transition: { duration: 0.8, ease: 'easeOut', staggerChildren: 0.3 }
+    transition: { duration: 0.8, ease: 'easeOut', staggerChildren: 0.2 }
   }
 };
 

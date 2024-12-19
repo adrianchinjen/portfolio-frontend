@@ -1,25 +1,31 @@
+import { type SectionRefs } from '@/app/portfolio/components/layouts/Navbar';
 import { NavLink } from 'react-router-dom';
 
 interface NavListProps {
   isOpen: boolean;
+  onNavigate: (ref: React.RefObject<HTMLElement>) => void;
+  sectionRefs: SectionRefs;
 }
 
-const NavItems = ({ isOpen }: NavListProps) => {
+const NavItems = ({ isOpen, onNavigate, sectionRefs }: NavListProps) => {
   return (
     <>
       {/* BROWSER NAV ITEMS */}
       <ul className="hidden items-center gap-12 text-base font-semibold xl:flex">
         <li className="cursor-pointer rounded-md p-3 transition-all hover:bg-sky-400 hover:text-white">
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="" onClick={() => onNavigate(sectionRefs.heroRef)}>
+            Home
+          </NavLink>
         </li>
         <li className="cursor-pointer rounded-md p-3 transition-all hover:bg-sky-400 hover:text-white">
-          <NavLink to="about">About</NavLink>
+          <NavLink to="" onClick={() => onNavigate(sectionRefs.experienceRef)}>
+            Experience
+          </NavLink>
         </li>
         <li className="cursor-pointer rounded-md p-3 transition-all hover:bg-sky-400 hover:text-white">
-          <NavLink to="">Explore</NavLink>
-        </li>
-        <li className="cursor-pointer rounded-md p-3 transition-all hover:bg-sky-400 hover:text-white">
-          <NavLink to="">Contact</NavLink>
+          <NavLink to="" onClick={() => onNavigate(sectionRefs.skillsRef)}>
+            Skills
+          </NavLink>
         </li>
       </ul>
 

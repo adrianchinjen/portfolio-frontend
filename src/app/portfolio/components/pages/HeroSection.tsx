@@ -14,12 +14,14 @@ import {
 } from '@/components/framer-motion/globalVariants';
 import { Card } from '@/components/ui/card';
 import { motion } from 'motion/react';
+import { forwardRef } from 'react';
 
-const HeroSection = () => {
+const HeroSection = forwardRef<HTMLDivElement, object>((props, ref) => {
   return (
     <>
       {/* SECTION 1 */}
       <motion.div
+        ref={ref}
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -143,6 +145,8 @@ const HeroSection = () => {
       </motion.div>
     </>
   );
-};
+});
+
+HeroSection.displayName = 'HeroSection';
 
 export default HeroSection;
