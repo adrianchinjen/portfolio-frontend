@@ -12,16 +12,16 @@ import { RiReactjsLine } from 'react-icons/ri';
 import { SiJquery, SiMongodb, SiMysql, SiNestjs } from 'react-icons/si';
 import { motion } from 'motion/react';
 import {
+  centerVariants,
   containerVariants,
-  itemVariants,
-  leftVariants,
-  rightVariants
+  itemVariants
 } from '@/components/framer-motion/globalVariants';
+import { forwardRef } from 'react';
 
-const ExperienceSection = () => {
+const ExperienceSection = forwardRef<HTMLDivElement, object>((props, ref) => {
   return (
     <>
-      <div className="mb-20 mt-40 flex justify-center text-5xl font-bold drop-shadow-md">
+      <div ref={ref} className="mb-20 mt-40 flex justify-center text-5xl font-bold drop-shadow-md">
         Experience
       </div>
       <div className="relative z-0 mx-auto flex flex-col gap-4 pb-10 sm:max-w-md md:max-w-full md:flex-row xl:max-w-5xl 2xl:max-w-6xl">
@@ -83,30 +83,30 @@ const ExperienceSection = () => {
                 </CardBody>
               </CardContent>
             </motion.div>
-            <motion.div variants={leftVariants}>
+            <motion.div variants={itemVariants}>
               <CardFooter className="flex flex-row flex-wrap justify-center gap-4">
-                <motion.div variants={leftVariants}>
+                <motion.div variants={centerVariants}>
                   <IoLogoJavascript className="h-6 w-6" />
                 </motion.div>
-                <motion.div variants={leftVariants}>
+                <motion.div variants={centerVariants}>
                   <BiLogoTypescript className="h-6 w-6" />
                 </motion.div>
-                <motion.div variants={leftVariants}>
+                <motion.div variants={centerVariants}>
                   <RiReactjsLine className="h-6 w-6" />
                 </motion.div>
-                <motion.div variants={leftVariants}>
+                <motion.div variants={centerVariants}>
                   <SiNestjs className="h-6 w-6" />
                 </motion.div>
-                <motion.div variants={leftVariants}>
+                <motion.div variants={centerVariants}>
                   <SiMongodb className="h-6 w-6" />
                 </motion.div>
-                <motion.div variants={leftVariants}>
+                <motion.div variants={centerVariants}>
                   <AiOutlineJava className="h-6 w-6" />
                 </motion.div>
-                <motion.div variants={leftVariants}>
+                <motion.div variants={centerVariants}>
                   <SiMysql className="h-6 w-6" />
                 </motion.div>
-                <motion.div variants={leftVariants}>
+                <motion.div variants={centerVariants}>
                   <GrDocker className="h-6 w-6" />
                 </motion.div>
               </CardFooter>
@@ -171,33 +171,33 @@ const ExperienceSection = () => {
                 </CardBody>
               </CardContent>
             </motion.div>
-            <motion.div variants={leftVariants}>
+            <motion.div variants={itemVariants}>
               <CardFooter className="flex flex-row flex-wrap justify-center gap-4">
-                <motion.div variants={rightVariants}>
+                <motion.div variants={centerVariants}>
                   <IoLogoJavascript className="h-6 w-6" />
                 </motion.div>
-                <motion.div variants={rightVariants}>
+                <motion.div variants={centerVariants}>
                   <BiLogoTypescript className="h-6 w-6" />
                 </motion.div>
-                <motion.div variants={rightVariants}>
+                <motion.div variants={centerVariants}>
                   <RiReactjsLine className="h-6 w-6" />
                 </motion.div>
-                <motion.div variants={rightVariants}>
+                <motion.div variants={centerVariants}>
                   <SiMongodb className="h-6 w-6" />
                 </motion.div>
-                <motion.div variants={rightVariants}>
+                <motion.div variants={centerVariants}>
                   <DiNodejs className="h-6 w-6" />
                 </motion.div>
-                <motion.div variants={rightVariants}>
+                <motion.div variants={centerVariants}>
                   <BiLogoPostgresql className="h-6 w-6" />
                 </motion.div>
-                <motion.div variants={rightVariants}>
+                <motion.div variants={centerVariants}>
                   <FaAws className="h-6 w-6" />
                 </motion.div>
-                <motion.div variants={rightVariants}>
+                <motion.div variants={centerVariants}>
                   <GrDocker className="h-6 w-6" />
                 </motion.div>
-                <motion.div variants={rightVariants}>
+                <motion.div variants={centerVariants}>
                   <SiJquery className="h-6 w-6" />
                 </motion.div>
               </CardFooter>
@@ -207,7 +207,9 @@ const ExperienceSection = () => {
       </div>
     </>
   );
-};
+});
+
+ExperienceSection.displayName = 'ExperienceSection';
 
 export default ExperienceSection;
 //2d2d2f
