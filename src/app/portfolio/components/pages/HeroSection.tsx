@@ -22,6 +22,7 @@ const HeroSection = forwardRef<HTMLDivElement, object>((props, ref) => {
       {/* SECTION 1 */}
       <motion.div
         ref={ref}
+        {...props}
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"

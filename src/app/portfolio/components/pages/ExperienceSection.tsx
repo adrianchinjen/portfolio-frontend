@@ -21,7 +21,11 @@ import { forwardRef } from 'react';
 const ExperienceSection = forwardRef<HTMLDivElement, object>((props, ref) => {
   return (
     <>
-      <div ref={ref} className="mb-20 mt-40 flex justify-center text-5xl font-bold drop-shadow-md">
+      <div
+        ref={ref}
+        className="mb-20 mt-40 flex justify-center text-5xl font-bold drop-shadow-md"
+        {...props}
+      >
         Experience
       </div>
       <div className="relative z-0 mx-auto flex flex-col gap-4 pb-10 sm:max-w-md md:max-w-full md:flex-row xl:max-w-5xl 2xl:max-w-6xl">
