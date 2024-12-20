@@ -6,6 +6,7 @@ const HeroSection = lazy(() => import('../pages/HeroSection'));
 const ExperienceSection = lazy(() => import('../pages/ExperienceSection'));
 const SkillsSection = lazy(() => import('../pages/SkillsSection'));
 const Footer = lazy(() => import('../pages/Footer'));
+const RepositorySection = lazy(() => import('../pages/RepositorySection'));
 
 const RootLayout = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -14,7 +15,8 @@ const RootLayout = () => {
   const sectionRefs = {
     heroRef: useRef(null),
     experienceRef: useRef(null),
-    skillsRef: useRef(null)
+    skillsRef: useRef(null),
+    repoRef: useRef(null)
   };
 
   const scrollToSection = (ref: React.RefObject<HTMLElement>) => {
@@ -41,19 +43,13 @@ const RootLayout = () => {
               <HeroSection ref={sectionRefs.heroRef} />
               <ExperienceSection ref={sectionRefs.experienceRef} />
               <SkillsSection ref={sectionRefs.skillsRef} />
+              <RepositorySection ref={sectionRefs.repoRef} />
               {/* <CertificationSection /> */}
             </div>
             <div className="max-w-8xl mx-auto mt-20 bg-zinc-800 px-6 dark:bg-black">
               <Footer />
             </div>
             <CopyrightNotice />
-            {/* <footer className="flex w-full flex-row justify-center gap-10 border-t border-zinc-700 bg-zinc-800 px-5 py-1 text-gray-400 dark:bg-black">
-              <p className="text-sm text-df-light">
-                © {2023} – {new Date().getFullYear()}
-              </p>
-              <p className="text-sm text-df-light">A | Chinjen.</p>
-              <p className="text-sm text-df-light">All rights reserved.</p>
-            </footer> */}
           </>
         ) : (
           <>Loading</>

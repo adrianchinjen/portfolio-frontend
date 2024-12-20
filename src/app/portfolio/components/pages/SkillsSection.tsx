@@ -20,12 +20,15 @@ import {
 import { forwardRef } from 'react';
 
 const SkillsSection = forwardRef<HTMLDivElement, object>((props, ref) => {
+  const itemsClass =
+    'my-auto flex w-fit flex-row content-center items-center gap-3 rounded-sm border-[1px] bg-df-teal p-3 shadow-sm dark:border-df-teal dark:bg-[#2d2d2f]';
+
   const renderFeatured = (item: FeaturedSkill, index: number) => {
     return (
       <motion.div variants={centerVariants} key={index}>
-        <Card className="my-auto flex w-fit flex-row content-center items-center gap-3 rounded-sm border-none bg-df-teal p-3 shadow-sm dark:bg-[#2d2d2f] dark:shadow-df-yellow">
+        <Card className={itemsClass}>
           {item.icon}
-          <CardDescription className="text-df-light dark:text-df-light">
+          <CardDescription className="text-df-light dark:text-stone-300">
             {item.name}
           </CardDescription>
         </Card>
@@ -36,9 +39,9 @@ const SkillsSection = forwardRef<HTMLDivElement, object>((props, ref) => {
   const renderFrontend = (item: FrontEndSkill, index: number) => {
     return (
       <motion.div variants={centerVariants} key={index}>
-        <Card className="my-auto flex w-fit flex-row content-center items-center gap-3 rounded-sm border-none bg-df-teal p-3 shadow-sm dark:bg-[#2d2d2f] dark:shadow-df-yellow">
+        <Card className={itemsClass}>
           {item.icon}
-          <CardDescription className="text-df-light dark:text-df-light">
+          <CardDescription className="text-df-light dark:text-stone-300">
             {item.name}
           </CardDescription>
         </Card>
@@ -49,9 +52,9 @@ const SkillsSection = forwardRef<HTMLDivElement, object>((props, ref) => {
   const renderBackend = (item: BackendSkill, index: number) => {
     return (
       <motion.div variants={centerVariants} key={index}>
-        <Card className="my-auto flex w-fit flex-row content-center items-center gap-3 rounded-sm border-none bg-df-teal p-3 shadow-sm dark:bg-[#2d2d2f] dark:shadow-df-yellow">
+        <Card className={itemsClass}>
           {item.icon}
-          <CardDescription className="text-df-light dark:text-df-light">
+          <CardDescription className="text-df-light dark:text-stone-300">
             {item.name}
           </CardDescription>
         </Card>
@@ -62,9 +65,9 @@ const SkillsSection = forwardRef<HTMLDivElement, object>((props, ref) => {
   const renderOthers = (item: OtherSkill, index: number) => {
     return (
       <motion.div variants={centerVariants} key={index}>
-        <Card className="my-auto flex w-fit flex-row content-center items-center gap-3 rounded-sm border-none bg-df-teal p-3 shadow-sm dark:bg-[#2d2d2f] dark:shadow-df-yellow">
+        <Card className={itemsClass}>
           {item.icon}
-          <CardDescription className="text-df-light dark:text-df-light">
+          <CardDescription className="text-df-light dark:text-stone-300">
             {item.name}
           </CardDescription>
         </Card>
@@ -94,7 +97,7 @@ const SkillsSection = forwardRef<HTMLDivElement, object>((props, ref) => {
 
         <motion.div
           variants={leftVariants}
-          className="mt-2 flex flex-row flex-wrap gap-2 lg:mx-auto lg:max-w-xl lg:justify-center"
+          className="mt-2 flex flex-row flex-wrap gap-3 lg:mx-auto lg:max-w-xl lg:justify-center"
         >
           {featuredSkills[0].featured.map(renderFeatured)}
         </motion.div>
