@@ -8,6 +8,7 @@ import RootLayout from '../components/layouts/Rootlayout';
 import Home from '../components/pages/Home';
 import About from '../components/pages/About';
 import PageBackground from '../components/pages/PageBackground';
+import NotFound from '../components/utils/NotFound';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -15,6 +16,9 @@ const router = createBrowserRouter(
       <Route path="/" element={<RootLayout />}>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
+      </Route>
+      <Route>
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Route>
   )
