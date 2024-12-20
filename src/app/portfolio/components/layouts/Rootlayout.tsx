@@ -1,5 +1,6 @@
 import { lazy, Suspense, useEffect, useRef, useState } from 'react';
 import CopyrightNotice from './CopyrightNotice';
+import Loading from '../utils/Loading';
 
 const NavBar = lazy(() => import('./Navbar'));
 const HeroSection = lazy(() => import('../pages/HeroSection'));
@@ -27,18 +28,18 @@ const RootLayout = () => {
   };
 
   useEffect(() => {
-    const timer = setTimeout(() => setIsVisible(true), 1000); // 1-second delay
+    const timer = setTimeout(() => setIsVisible(true), 2000); // 1-second delay
     return () => clearTimeout(timer); // Cleanup timer on unmount
   }, []);
 
   return (
     <div>
-      <Suspense fallback={<div>Loading...</div>}>
-        <div className="relative z-50">
-          <NavBar onNavigate={scrollToSection} sectionRefs={sectionRefs} />
-        </div>
+      <Suspense fallback={<Loading />}>
         {isVisible ? (
           <>
+            <div className="relative z-50">
+              <NavBar onNavigate={scrollToSection} sectionRefs={sectionRefs} />
+            </div>
             <div className="max-w-8xl mx-auto min-h-91 px-6 pt-10 3xl:min-h-93">
               <HeroSection ref={sectionRefs.heroRef} />
               <ExperienceSection ref={sectionRefs.experienceRef} />
@@ -52,7 +53,7 @@ const RootLayout = () => {
             <CopyrightNotice />
           </>
         ) : (
-          <>Loading</>
+          <Loading />
         )}
       </Suspense>
     </div>
