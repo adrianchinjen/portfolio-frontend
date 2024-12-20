@@ -5,9 +5,10 @@ interface NavListProps {
   isOpen: boolean;
   onNavigate: (ref: React.RefObject<HTMLElement>) => void;
   sectionRefs: SectionRefs;
+  onOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const NavItems = ({ isOpen, onNavigate, sectionRefs }: NavListProps) => {
+const NavItems = ({ isOpen, onNavigate, sectionRefs, onOpen }: NavListProps) => {
   return (
     <>
       {/* BROWSER NAV ITEMS */}
@@ -27,6 +28,11 @@ const NavItems = ({ isOpen, onNavigate, sectionRefs }: NavListProps) => {
             Skills
           </NavLink>
         </li>
+        <li className="dark:hover:text-yellow cursor-pointer rounded-md p-3 transition-all hover:text-df-yellow">
+          <NavLink to="" onClick={() => onNavigate(sectionRefs.repoRef)}>
+            Repositories
+          </NavLink>
+        </li>
       </ul>
 
       {/* MOBILE NAV ITEMS */}
@@ -35,18 +41,47 @@ const NavItems = ({ isOpen, onNavigate, sectionRefs }: NavListProps) => {
         style={{ transition: 'transform 0.3s ease, opacity 0.3s ease' }}
       >
         <li className="dark:hover:text-yellow w-full cursor-pointer list-none p-4 text-center transition-all hover:text-df-yellow">
-          <NavLink to="" onClick={() => onNavigate(sectionRefs.heroRef)}>
+          <NavLink
+            to=""
+            onClick={() => {
+              onNavigate(sectionRefs.heroRef);
+              onOpen(false);
+            }}
+          >
             Home
           </NavLink>
         </li>
         <li className="dark:hover:text-yellow w-full cursor-pointer list-none p-4 text-center transition-all hover:text-df-yellow">
-          <NavLink to="" onClick={() => onNavigate(sectionRefs.experienceRef)}>
+          <NavLink
+            to=""
+            onClick={() => {
+              onNavigate(sectionRefs.experienceRef);
+              onOpen(false);
+            }}
+          >
             Experience
           </NavLink>
         </li>
         <li className="dark:hover:text-yellow w-full cursor-pointer list-none p-4 text-center transition-all hover:text-df-yellow">
-          <NavLink to="" onClick={() => onNavigate(sectionRefs.skillsRef)}>
+          <NavLink
+            to=""
+            onClick={() => {
+              onNavigate(sectionRefs.skillsRef);
+              onOpen(false);
+            }}
+          >
             Skills
+          </NavLink>
+        </li>
+        <li className="dark:hover:text-yellow w-full cursor-pointer list-none p-4 text-center transition-all hover:text-df-yellow">
+          <NavLink
+            to=""
+            onClick={() => {
+              onNavigate(sectionRefs.repoRef);
+              onOpen(false);
+            }}
+          >
+            Repositories
           </NavLink>
         </li>
       </ul>

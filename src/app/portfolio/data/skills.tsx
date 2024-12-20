@@ -58,39 +58,39 @@ export const featuredSkills: FeaturedSkills[] = [
     featured: [
       {
         name: 'Javascript',
-        icon: <IoLogoJavascript className="text-df-light" />
+        icon: <IoLogoJavascript className="text-stone-300" />
       },
       {
         name: 'Typescript',
-        icon: <SiTypescript className="text-df-light" />
+        icon: <SiTypescript className="text-stone-300" />
       },
       {
         name: 'ReactJs',
-        icon: <FaReact className="text-df-light" />
+        icon: <FaReact className="text-stone-300" />
       },
       {
         name: 'NodeJs',
-        icon: <DiNodejs className="text-df-light" />
+        icon: <DiNodejs className="text-stone-300" />
       },
       {
         name: 'ExpressJs',
-        icon: <SiExpress className="text-df-light" />
+        icon: <SiExpress className="text-stone-300" />
       },
       {
         name: 'NestJs',
-        icon: <SiNestjs className="text-df-light" />
+        icon: <SiNestjs className="text-stone-300" />
       },
       {
         name: 'TailwindCss',
-        icon: <RiTailwindCssFill className="text-df-light" />
+        icon: <RiTailwindCssFill className="text-stone-300" />
       },
       {
         name: 'HTML',
-        icon: <FaHtml5 className="text-df-light" />
+        icon: <FaHtml5 className="text-stone-300" />
       },
       {
         name: 'CSS',
-        icon: <FaCss3Alt className="text-df-light" />
+        icon: <FaCss3Alt className="text-stone-300" />
       }
     ]
   }
@@ -101,31 +101,31 @@ export const frontendSkills: FrontEndSkills[] = [
     frontend: [
       {
         name: 'ReactJs',
-        icon: <FaReact className="text-df-light" />
+        icon: <FaReact className="text-stone-300" />
       },
       {
         name: 'Tailwind',
-        icon: <RiTailwindCssFill className="text-df-light" />
+        icon: <RiTailwindCssFill className="text-stone-300" />
       },
       {
         name: 'React-query',
-        icon: <SiReactquery className="text-df-light" />
+        icon: <SiReactquery className="text-stone-300" />
       },
       {
         name: 'Redux Toolkit',
-        icon: <TbBrandRedux className="text-df-light" />
+        icon: <TbBrandRedux className="text-stone-300" />
       },
       {
         name: 'Axios',
-        icon: <SiAxios className="text-df-light" />
+        icon: <SiAxios className="text-stone-300" />
       },
       {
         name: 'Bootstrap',
-        icon: <RiBootstrapFill className="text-df-light" />
+        icon: <RiBootstrapFill className="text-stone-300" />
       },
       {
         name: 'JQuery',
-        icon: <DiJqueryLogo className="text-df-light" />
+        icon: <DiJqueryLogo className="text-stone-300" />
       }
     ]
   }
@@ -136,19 +136,19 @@ export const otherSkills: OtherSkills[] = [
     others: [
       {
         name: 'Docker',
-        icon: <GrDocker className="text-df-light" />
+        icon: <GrDocker className="text-stone-300" />
       },
       {
         name: 'Git',
-        icon: <FaGitAlt className="text-df-light" />
+        icon: <FaGitAlt className="text-stone-300" />
       },
       {
         name: 'CI/CD',
-        icon: <IoInfiniteSharp className="text-df-light" />
+        icon: <IoInfiniteSharp className="text-stone-300" />
       },
       {
         name: 'AWS',
-        icon: <FaAws className="text-df-light" />
+        icon: <FaAws className="text-stone-300" />
       }
     ]
   }
@@ -159,35 +159,35 @@ export const backendSkills: BackendSkills[] = [
     backend: [
       {
         name: 'NodeJs',
-        icon: <DiNodejs className="text-df-light" />
+        icon: <DiNodejs className="text-stone-300" />
       },
       {
         name: 'NestJs',
-        icon: <SiNestjs className="text-df-light" />
+        icon: <SiNestjs className="text-stone-300" />
       },
       {
         name: 'ExpressJs',
-        icon: <SiExpress className="text-df-light" />
+        icon: <SiExpress className="text-stone-300" />
       },
       {
         name: 'TypeORM',
-        icon: <SiTypeorm className="text-df-light" />
+        icon: <SiTypeorm className="text-stone-300" />
       },
       {
         name: 'Prisma',
-        icon: <SiPrisma className="text-df-light" />
+        icon: <SiPrisma className="text-stone-300" />
       },
       {
         name: 'Mongoose',
-        icon: <SiMongoose className="text-df-light" />
+        icon: <SiMongoose className="text-stone-300" />
       },
       {
         name: 'Postgres',
-        icon: <BiLogoPostgresql className="text-df-light" />
+        icon: <BiLogoPostgresql className="text-stone-300" />
       },
       {
         name: 'MongoDB',
-        icon: <SiMongodb className="text-df-light" />
+        icon: <SiMongodb className="text-stone-300" />
       }
     ]
   }
