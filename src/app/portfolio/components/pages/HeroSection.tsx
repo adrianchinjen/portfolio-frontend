@@ -59,7 +59,7 @@ const HeroSection = forwardRef<HTMLDivElement, object>((props, ref) => {
           <motion.div variants={leftVariants} className="flex gap-3">
             <motion.div variants={leftVariants} className="content-center justify-center">
               <Heading fontWeight="font-bold" className="">
-                04
+                05
               </Heading>
             </motion.div>
             <motion.div variants={leftVariants} className="flex flex-col justify-center pt-2">
@@ -73,15 +73,14 @@ const HeroSection = forwardRef<HTMLDivElement, object>((props, ref) => {
           <motion.div variants={rightVariants} className="flex h-full w-full flex-col gap-4">
             <motion.div variants={rightVariants} className="flex-1 justify-items-center">
               <Card className="rounded-xl border-none bg-white p-3 shadow-md dark:bg-df-light">
-                <div className="">
-                  <Paragraph
-                    className="text-center dark:text-[#0d2f3f] xl:text-left"
-                    fontWeight="font-medium"
-                  >
-                    I do websites for a living
-                    <span className="block dark:text-[#0d2f3f] xl:hidden">For about 4 years</span>
-                  </Paragraph>
-                </div>
+                <Paragraph
+                  className="text-center dark:text-[#0d2f3f] xl:text-left"
+                  fontWeight="font-medium"
+                >
+                  A{' '}
+                  <span className="font-bold italic dark:text-[#0d2f3f]">Full-Stack Engineer</span>
+                  <span className="block dark:text-[#0d2f3f] xl:hidden">For about 4 years</span>
+                </Paragraph>
               </Card>
             </motion.div>
             <motion.div
@@ -89,14 +88,18 @@ const HeroSection = forwardRef<HTMLDivElement, object>((props, ref) => {
               className="flex-1 xl:content-center xl:justify-items-end"
             >
               <Card className="rounded-xl border-none bg-white p-3 shadow-md dark:bg-df-light">
-                <div className="">
-                  <Paragraph
-                    className="text-center dark:text-[#0d2f3f] xl:text-right"
-                    fontWeight="font-medium"
-                  >
-                    React for frontend, NodeJs for backend
+                <Paragraph
+                  className="text-center dark:text-[#0d2f3f] xl:text-right"
+                  fontWeight="font-medium"
+                >
+                  <Paragraph className="dark:text-[#0d2f3f]" fontWeight="font-medium">
+                    I build modern solutions
                   </Paragraph>
-                </div>
+                  <Paragraph className="dark:text-[#0d2f3f]" fontWeight="font-medium">
+                    for your toughest problems
+                  </Paragraph>
+                  <span className="block dark:text-[#0d2f3f] xl:hidden">For about 4 years</span>
+                </Paragraph>
               </Card>
             </motion.div>
             <motion.div
@@ -106,7 +109,12 @@ const HeroSection = forwardRef<HTMLDivElement, object>((props, ref) => {
               <Card className="rounded-xl border-none bg-white p-3 shadow-md dark:bg-df-light">
                 <div className="">
                   <Paragraph className="text-center dark:text-[#0d2f3f]" fontWeight="font-medium">
-                    And little bit of Typescript and deployment
+                    <Paragraph className="dark:text-[#0d2f3f]" fontWeight="font-medium">
+                      Modern frameworks for the frontend.
+                    </Paragraph>
+                    <Paragraph className="dark:text-[#0d2f3f]" fontWeight="font-medium">
+                      Robust solutions for the backend
+                    </Paragraph>
                   </Paragraph>
                   <Paragraph
                     className="hidden text-center dark:text-[#0d2f3f]"
@@ -130,12 +138,12 @@ const HeroSection = forwardRef<HTMLDivElement, object>((props, ref) => {
               font="font-robotocondense"
               fontWeight="font-medium"
             >
-              I do websites for a living.
+              I build modern solutions for your toughest problems.
             </Paragraph>
           </motion.div>
           <motion.div variants={bottomVariants}>
             <Paragraph
-              className="text-center !text-xl text-[#0d2f3f]"
+              className="pt-4 text-center !text-xl text-[#0d2f3f]"
               font="font-robotocondense"
               fontWeight="font-medium"
             >

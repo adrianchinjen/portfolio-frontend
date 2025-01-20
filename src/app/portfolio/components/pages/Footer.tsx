@@ -37,7 +37,7 @@ const Footer = () => {
           </Subheading>
         </motion.div>
         <motion.div variants={leftVariants}>
-          <Paragraph className="mt-2 italic text-df-light">Fullstack Web Developer</Paragraph>
+          <Paragraph className="mt-2 italic text-df-light">Full-Stack Engineer</Paragraph>
         </motion.div>
       </motion.div>
       {/* SECTION 2 */}
