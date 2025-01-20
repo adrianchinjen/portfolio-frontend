@@ -42,10 +42,10 @@ const ExperienceSection = forwardRef<HTMLDivElement, object>((props, ref) => {
                 <div className="flex flex-row justify-between">
                   <CardTitle className="!font-bold">SyCip Gorres Velayo & Co.</CardTitle>
                   <CardDescription className="my-auto hidden italic text-df-dark dark:text-df-light lg:block">
-                    March 2023 - Present
+                    Mar 2023 - Present
                   </CardDescription>
                 </div>
-                <CardSubTitle className="text-sm">Fullstack Developer</CardSubTitle>
+                <CardSubTitle className="text-sm">Fullstack Engineer</CardSubTitle>
                 <CardDescription className="my-auto italic text-df-dark dark:text-df-light lg:hidden">
                   March 2023 - Present
                 </CardDescription>
@@ -59,9 +59,7 @@ const ExperienceSection = forwardRef<HTMLDivElement, object>((props, ref) => {
                       <CardSubTitle className="font-semibold">Projects</CardSubTitle>
                     </motion.div>
                     <ul className="list-inside list-decimal pl-2">
-                      <motion.li variants={itemVariants}>
-                        EY-Commerce - <span className="italic">(Internal project)</span>
-                      </motion.li>
+                      <motion.li variants={itemVariants}>EY-Commerce</motion.li>
                       <motion.li variants={itemVariants}>
                         eForms BIR System -{' '}
                         <span className="italic">(Bureau of Internal Revenue)</span>
@@ -73,13 +71,14 @@ const ExperienceSection = forwardRef<HTMLDivElement, object>((props, ref) => {
                       </motion.div>
                       <motion.div variants={itemVariants}>
                         <div className="adrian mt-2 italic">
-                          Collaborated as a member of an Agile team, contributing to backend
-                          codebases for the eForms project and both frontend and backend development
-                          for other initiatives. Actively participated in code reviews, provided
-                          constructive feedback, and managed pull requests to ensure code quality
-                          and consistency. Organized and prioritized tasks on Trello boards in
-                          alignment with system requirements and deadline, facilitating efficient
-                          workflow management and project execution.
+                          Developed full-stack applications, including an e-commerce web app and
+                          system enhancements for a national government agency. I collaborated with
+                          Agile teams to deliver solutions that met stakeholder requirements and
+                          project goals. As part of the development process, I carried out code
+                          reviews to ensure compliance with coding standards and best practices.
+                          Additionally, I actively participated in identifying opportunities for
+                          improvement and implemented optimizations to enhance application
+                          performance and user experience.
                         </div>
                       </motion.div>
                     </motion.div>
@@ -130,12 +129,12 @@ const ExperienceSection = forwardRef<HTMLDivElement, object>((props, ref) => {
                 <div className="flex flex-row justify-between">
                   <CardTitle className="!font-bold">I.T. Managers Inc.</CardTitle>
                   <CardDescription className="my-auto hidden italic text-df-dark dark:text-df-light lg:block">
-                    October 2019 - March 2023
+                    Oct 2019 - Mar 2023
                   </CardDescription>
                 </div>
-                <CardSubTitle className="text-sm">Jr. Programmer</CardSubTitle>
+                <CardSubTitle className="text-sm">Jr. Fullstack Developer</CardSubTitle>
                 <CardDescription className="my-auto italic text-df-dark dark:text-df-light lg:hidden">
-                  October 2019 - March 2023
+                  Oct 2019 - Mar 2023
                 </CardDescription>
               </CardHeader>
             </motion.div>
@@ -145,12 +144,10 @@ const ExperienceSection = forwardRef<HTMLDivElement, object>((props, ref) => {
                   <motion.div variants={itemVariants}>
                     <CardSubTitle className="font-semibold">Projects</CardSubTitle>
                     <ul className="list-inside list-decimal pl-2">
+                      <motion.li variants={itemVariants}>Learning Hub</motion.li>
                       <motion.li variants={itemVariants}>
-                        Learning Hub - <span className="italic">(Toyota Motors Philippines)</span>
-                      </motion.li>
-                      <motion.li variants={itemVariants}>
-                        Database Data Cleanup -{' '}
-                        <span className="italic">(Toyota Motors Philippines)</span>
+                        Database Data Cleanup{' '}
+                        {/* <span className="italic">(Toyota Motors Philippines)</span> */}
                       </motion.li>
                     </ul>
                     <motion.div variants={itemVariants}>
@@ -160,14 +157,16 @@ const ExperienceSection = forwardRef<HTMLDivElement, object>((props, ref) => {
                       <motion.div variants={itemVariants}>
                         <div className="adrian mt-2 italic">
                           Learning Hub was initiated and developed from the ground up, where I
-                          contributed to both frontend and backend codebases and gathered
-                          information to define system requirements. The platform includes
-                          applications such as a Digital Library, Online Examination, Exam
-                          Scheduling, Admin Dashboard, and Content Management, which deliver
-                          personalized content based on user rank. I participated in code reviews,
-                          managed pull requests, and ensured code quality. I also assisted in
-                          implementing CI/CD pipelines and deployment processes, providing ongoing
-                          user support.
+                          contributed to both frontend and backend codebases and worked closely with
+                          stakeholders to gather and analyze system requirements, ensuring alignment
+                          with business goals and desired outcomes. The platform includes
+                          applications such as Digital Library, Online Examination, Exam Scheduling,
+                          Admin Dashboard, and Content Management, which deliver personalized
+                          content based on user rank. Collaborated with an agile team and
+                          transformed UI/UX wireframes into fully functional web applications and
+                          performing code reviews to ensure code quality. Assisted in implementing
+                          CI/CD pipelines and deployment processes, and providing ongoing user
+                          support.
                         </div>
                       </motion.div>
                     </motion.div>
