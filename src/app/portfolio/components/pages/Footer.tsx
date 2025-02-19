@@ -56,7 +56,7 @@ const Footer = () => {
         </motion.div>
         <div className="mt-5 flex flex-row content-center items-center gap-3">
           <FiPhone className="text-df-light" />
-          <Paragraph className="text-df-light">+63 919 349 1134</Paragraph>
+          <Paragraph className="text-df-light">+63 977 640 0142</Paragraph>
         </div>
         <div className="mt-4 flex flex-row content-center items-center gap-3">
           <MdOutlineEmail className="text-df-light" />
