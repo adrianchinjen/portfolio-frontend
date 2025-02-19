@@ -1,21 +1,17 @@
 import CardBody from '@/components/custom-ui/text/card/CardBody';
 import CardSubTitle from '@/components/custom-ui/text/card/CardSubTitle';
 import CardTitle from '@/components/custom-ui/text/card/CardTitle';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader } from '@/components/ui/card';
-import { AiOutlineJava } from 'react-icons/ai';
-import { BiLogoPostgresql, BiLogoTypescript } from 'react-icons/bi';
-import { DiNodejs } from 'react-icons/di';
-import { FaAws } from 'react-icons/fa6';
-import { GrDocker } from 'react-icons/gr';
-import { IoLogoJavascript } from 'react-icons/io5';
-import { RiReactjsLine } from 'react-icons/ri';
-import { SiJquery, SiMongodb, SiMysql, SiNestjs } from 'react-icons/si';
+import { Card, CardContent, CardDescription, CardHeader } from '@/components/ui/card';
+// import { AiOutlineJava } from 'react-icons/ai';
+// import { BiLogoPostgresql, BiLogoTypescript } from 'react-icons/bi';
+// import { DiNodejs } from 'react-icons/di';
+// import { FaAws } from 'react-icons/fa6';
+// import { GrDocker } from 'react-icons/gr';
+// import { IoLogoJavascript } from 'react-icons/io5';
+// import { RiReactjsLine } from 'react-icons/ri';
+// import { SiJquery, SiMongodb, SiMysql, SiNestjs } from 'react-icons/si';
 import { motion } from 'motion/react';
-import {
-  centerVariants,
-  containerVariants,
-  itemVariants
-} from '@/components/framer-motion/globalVariants';
+import { containerVariants, itemVariants } from '@/components/framer-motion/globalVariants';
 import { forwardRef } from 'react';
 
 const ExperienceSection = forwardRef<HTMLDivElement, object>((props, ref) => {
@@ -60,17 +56,39 @@ const ExperienceSection = forwardRef<HTMLDivElement, object>((props, ref) => {
                     </motion.div>
                     <ul className="list-inside list-decimal pl-2">
                       <motion.li variants={itemVariants}>EY-Commerce</motion.li>
-                      <motion.li variants={itemVariants}>
-                        eForms BIR System -{' '}
-                        <span className="italic">(Bureau of Internal Revenue)</span>
-                      </motion.li>
+                      <motion.li variants={itemVariants}>eForms BIR System</motion.li>
+                      <motion.li variants={itemVariants}>EIS - E-Receipt System</motion.li>
                     </ul>
                     <motion.div variants={itemVariants}>
                       <motion.div variants={itemVariants}>
-                        <CardSubTitle className="mt-5 font-semibold">Details</CardSubTitle>
+                        <CardSubTitle className="mt-5 font-semibold">Detailed Tasks</CardSubTitle>
                       </motion.div>
                       <motion.div variants={itemVariants}>
-                        <div className="adrian mt-2 italic">
+                        <ul className="list-outside list-disc pl-6">
+                          <motion.li variants={itemVariants}>
+                            Developed full-stack applications, including an e-commerce web app, an
+                            e-receipt system, and system enhancements for a national government
+                            agency.
+                          </motion.li>
+                          <motion.li variants={itemVariants}>
+                            Collaborated with Agile teams to deliver solutions that met stakeholder
+                            requirements and project goals.
+                          </motion.li>
+                          <motion.li variants={itemVariants}>
+                            Carried out code reviews to ensure compliance with coding standards and
+                            best practices.
+                          </motion.li>
+                          <motion.li variants={itemVariants}>
+                            Participated in identifying opportunities for improvement and
+                            implemented optimizations and effective solutions to enhance application
+                            performance and user experience.
+                          </motion.li>
+                          <motion.li variants={itemVariants}>
+                            Supervised a team of junior developers in the development of an
+                            e-commerce web app, fostering collaboration and skills development.
+                          </motion.li>
+                        </ul>
+                        {/* <div className="adrian mt-2 italic">
                           Developed full-stack applications, including an e-commerce web app and
                           system enhancements for a national government agency. I collaborated with
                           Agile teams to deliver solutions that met stakeholder requirements and
@@ -79,14 +97,14 @@ const ExperienceSection = forwardRef<HTMLDivElement, object>((props, ref) => {
                           Additionally, I actively participated in identifying opportunities for
                           improvement and implemented optimizations to enhance application
                           performance and user experience.
-                        </div>
+                        </div> */}
                       </motion.div>
                     </motion.div>
                   </motion.div>
                 </CardBody>
               </CardContent>
             </motion.div>
-            <motion.div variants={itemVariants}>
+            {/* <motion.div variants={itemVariants}>
               <CardFooter className="flex flex-row flex-wrap justify-center gap-4">
                 <motion.div variants={centerVariants}>
                   <IoLogoJavascript className="h-6 w-6" />
@@ -113,7 +131,7 @@ const ExperienceSection = forwardRef<HTMLDivElement, object>((props, ref) => {
                   <GrDocker className="h-6 w-6" />
                 </motion.div>
               </CardFooter>
-            </motion.div>
+            </motion.div> */}
           </Card>
         </motion.div>
         <motion.div
@@ -155,7 +173,33 @@ const ExperienceSection = forwardRef<HTMLDivElement, object>((props, ref) => {
                         <CardSubTitle className="mt-5 font-semibold">Details</CardSubTitle>
                       </motion.div>
                       <motion.div variants={itemVariants}>
-                        <div className="adrian mt-2 italic">
+                        <ul className="list-outside list-disc pl-6">
+                          <motion.li variants={itemVariants}>
+                            Successfully deployed a comprehensive learning system for a global
+                            organization, enabling nationwide staff training.
+                          </motion.li>
+                          <motion.li variants={itemVariants}>
+                            Meet with stakeholders to gather and analyze system requirements,
+                            ensuring alignment with business goals and outcomes.
+                          </motion.li>
+                          <motion.li variants={itemVariants}>
+                            Collaborated with an Agile team to deliver solutions that met project
+                            objectives and stakeholder expectations.
+                          </motion.li>
+                          <motion.li variants={itemVariants}>
+                            Transformed UI/UX wireframes into fully functional, user-facing
+                            applications.
+                          </motion.li>
+                          <motion.li variants={itemVariants}>
+                            Developed critical system modules, including an online quiz and exam
+                            platform, a content management dashboard, and a scheduling application.
+                          </motion.li>
+                          <motion.li variants={itemVariants}>
+                            Provided end-user and administrator support during the system&apos;s
+                            initial launch to ensure a smooth adoption process.
+                          </motion.li>
+                        </ul>
+                        {/* <div className="adrian mt-2 italic">
                           Learning Hub was initiated and developed from the ground up, where I
                           contributed to both frontend and backend codebases and worked closely with
                           stakeholders to gather and analyze system requirements, ensuring alignment
@@ -167,14 +211,14 @@ const ExperienceSection = forwardRef<HTMLDivElement, object>((props, ref) => {
                           performing code reviews to ensure code quality. Assisted in implementing
                           CI/CD pipelines and deployment processes, and providing ongoing user
                           support.
-                        </div>
+                        </div> */}
                       </motion.div>
                     </motion.div>
                   </motion.div>
                 </CardBody>
               </CardContent>
             </motion.div>
-            <motion.div variants={itemVariants}>
+            {/* <motion.div variants={itemVariants}>
               <CardFooter className="flex flex-row flex-wrap justify-center gap-4">
                 <motion.div variants={centerVariants}>
                   <IoLogoJavascript className="h-6 w-6" />
@@ -204,7 +248,7 @@ const ExperienceSection = forwardRef<HTMLDivElement, object>((props, ref) => {
                   <SiJquery className="h-6 w-6" />
                 </motion.div>
               </CardFooter>
-            </motion.div>
+            </motion.div> */}
           </Card>
         </motion.div>
       </div>
