@@ -8,17 +8,53 @@ interface NavListProps {
   onOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const NavItems = ({ isOpen, onNavigate, sectionRefs, onOpen }: NavListProps) => {
+const NavItems = ({ isOpen }: NavListProps) => {
   return (
     <>
       {/* BROWSER NAV ITEMS */}
       <ul className="hidden items-center gap-12 text-base font-semibold xl:flex">
         <li className="dark:hover:text-yellow cursor-pointer rounded-md p-3 transition-all hover:text-df-yellow">
-          <NavLink to="" onClick={() => onNavigate(sectionRefs.heroRef)}>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive
+                ? 'text-nav-active'
+                : 'text-nav-inactive transition hover:text-nav-hover dark:text-df-light dark:hover:text-nav-hover'
+            }
+          >
             Home
           </NavLink>
         </li>
         <li className="dark:hover:text-yellow cursor-pointer rounded-md p-3 transition-all hover:text-df-yellow">
+          <NavLink
+            to="/playground"
+            className={({ isActive }) =>
+              isActive
+                ? 'text-nav-active'
+                : 'text-nav-inactive transition hover:text-nav-hover dark:text-df-light dark:hover:text-nav-hover'
+            }
+          >
+            Playground
+          </NavLink>
+        </li>
+        <li className="dark:hover:text-yellow cursor-pointer rounded-md p-3 transition-all hover:text-df-yellow">
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              isActive
+                ? 'text-nav-active'
+                : 'text-nav-inactive transition hover:text-nav-hover dark:text-df-light dark:hover:text-nav-hover'
+            }
+          >
+            About
+          </NavLink>
+        </li>
+
+        {/* <NavLink to="" onClick={() => onNavigate(sectionRefs.heroRef)}>
+            Home
+          </NavLink> */}
+
+        {/* <li className="dark:hover:text-yellow cursor-pointer rounded-md p-3 transition-all hover:text-df-yellow">
           <NavLink to="" onClick={() => onNavigate(sectionRefs.experienceRef)}>
             Experience
           </NavLink>
@@ -32,7 +68,7 @@ const NavItems = ({ isOpen, onNavigate, sectionRefs, onOpen }: NavListProps) => 
           <NavLink to="" onClick={() => onNavigate(sectionRefs.repoRef)}>
             Repositories
           </NavLink>
-        </li>
+        </li> */}
       </ul>
 
       {/* MOBILE NAV ITEMS */}
@@ -41,6 +77,43 @@ const NavItems = ({ isOpen, onNavigate, sectionRefs, onOpen }: NavListProps) => 
         style={{ transition: 'transform 0.3s ease, opacity 0.3s ease' }}
       >
         <li className="dark:hover:text-yellow w-full cursor-pointer list-none p-4 text-center transition-all hover:text-df-yellow">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive
+                ? 'text-nav-active'
+                : 'text-nav-inactive transition hover:text-nav-hover dark:text-df-light dark:hover:text-nav-hover'
+            }
+          >
+            Home
+          </NavLink>
+        </li>
+        <li className="dark:hover:text-yellow w-full cursor-pointer list-none p-4 text-center transition-all hover:text-df-yellow">
+          <NavLink
+            to="/playground"
+            className={({ isActive }) =>
+              isActive
+                ? 'text-nav-active'
+                : 'text-nav-inactive transition hover:text-nav-hover dark:text-df-light dark:hover:text-nav-hover'
+            }
+          >
+            Playground
+          </NavLink>
+        </li>
+        <li className="dark:hover:text-yellow w-full cursor-pointer list-none p-4 text-center transition-all hover:text-df-yellow">
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              isActive
+                ? 'text-nav-active'
+                : 'text-nav-inactive transition hover:text-nav-hover dark:text-df-light dark:hover:text-nav-hover'
+            }
+          >
+            About
+          </NavLink>
+        </li>
+
+        {/* <li className="dark:hover:text-yellow w-full cursor-pointer list-none p-4 text-center transition-all hover:text-df-yellow">
           <NavLink
             to=""
             onClick={() => {
@@ -83,7 +156,7 @@ const NavItems = ({ isOpen, onNavigate, sectionRefs, onOpen }: NavListProps) => 
           >
             Repositories
           </NavLink>
-        </li>
+        </li> */}
       </ul>
     </>
   );

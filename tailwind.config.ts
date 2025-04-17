@@ -20,7 +20,12 @@ export default {
         'df-yellow': '#edb33c',
         'df-teal': '#286f6c',
         transparent: 'transparent',
-        current: 'currentColor'
+        current: 'currentColor',
+        nav: {
+          active: '#edb33c',
+          inactive: '#0d2f3f',
+          hover: '#D08B00'
+        }
       },
       fontFamily: {
         khand: ['Khand', 'sans-serif'],

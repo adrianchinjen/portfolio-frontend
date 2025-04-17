@@ -1,8 +1,31 @@
+import { useEffect, useState } from 'react';
+import ExperienceSection from './ExperienceSection';
+import HeroSection from './HeroSection';
+import RepositorySection from './RepositorySection';
+import SkillsSection from './SkillsSection';
+import Loading from '../utils/Loading';
+
 const About = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsVisible(true), 2000); // 1-second delay
+    return () => clearTimeout(timer); // Cleanup timer on unmount
+  }, []);
+
   return (
-    // <section className="min-w-screen flex min-h-screen items-center justify-center bg-blue-500 text-white">
-    <h1 className="text-4xl">Welcome to about</h1>
-    // </section>
+    <>
+      {isVisible ? (
+        <>
+          <HeroSection />
+          <ExperienceSection />
+          <SkillsSection />
+          <RepositorySection />
+        </>
+      ) : (
+        <Loading />
+      )}
+    </>
   );
 };
 

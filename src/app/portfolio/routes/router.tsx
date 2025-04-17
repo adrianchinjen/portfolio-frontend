@@ -9,6 +9,7 @@ import Home from '../components/pages/Home';
 import About from '../components/pages/About';
 import PageBackground from '../components/pages/PageBackground';
 import NotFound from '../components/utils/NotFound';
+import Playground from '../components/pages/Playground';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -16,6 +17,7 @@ const router = createBrowserRouter(
       <Route path="/" element={<RootLayout />}>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
+        <Route path="playground" element={<Playground />} />
       </Route>
       <Route>
         <Route path="*" element={<NotFound />} />

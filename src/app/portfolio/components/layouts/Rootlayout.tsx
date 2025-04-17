@@ -1,16 +1,14 @@
-import { lazy, Suspense, useEffect, useRef, useState } from 'react';
+import { useRef } from 'react';
 import CopyrightNotice from './CopyrightNotice';
-import Loading from '../utils/Loading';
+import { Outlet } from 'react-router-dom';
+import Navbar from './Navbar';
+import Footer from '../pages/Footer';
 
-const NavBar = lazy(() => import('./Navbar'));
-const HeroSection = lazy(() => import('../pages/HeroSection'));
-const ExperienceSection = lazy(() => import('../pages/ExperienceSection'));
-const SkillsSection = lazy(() => import('../pages/SkillsSection'));
-const Footer = lazy(() => import('../pages/Footer'));
-const RepositorySection = lazy(() => import('../pages/RepositorySection'));
+// const NavBar = lazy(() => import('./Navbar'));
+// const Footer = lazy(() => import('../pages/Footer'));
 
 const RootLayout = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  // const [isVisible, setIsVisible] = useState(false);
 
   // refs
   const sectionRefs = {
@@ -27,35 +25,25 @@ const RootLayout = () => {
     }
   };
 
-  useEffect(() => {
-    const timer = setTimeout(() => setIsVisible(true), 2000); // 1-second delay
-    return () => clearTimeout(timer); // Cleanup timer on unmount
-  }, []);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => setIsVisible(true), 2000); // 1-second delay
+  //   return () => clearTimeout(timer); // Cleanup timer on unmount
+  // }, []);
 
   return (
     <div>
-      <Suspense fallback={<Loading />}>
-        {isVisible ? (
-          <>
-            <div className="relative z-50">
-              <NavBar onNavigate={scrollToSection} sectionRefs={sectionRefs} />
-            </div>
-            <div className="max-w-8xl mx-auto min-h-91 px-6 pt-10 3xl:min-h-93">
-              <HeroSection ref={sectionRefs.heroRef} />
-              <ExperienceSection ref={sectionRefs.experienceRef} />
-              <SkillsSection ref={sectionRefs.skillsRef} />
-              <RepositorySection ref={sectionRefs.repoRef} />
-              {/* <CertificationSection /> */}
-            </div>
-            <div className="max-w-8xl mx-auto mt-20 bg-zinc-800 px-6 dark:bg-black">
-              <Footer />
-            </div>
-            <CopyrightNotice />
-          </>
-        ) : (
-          <Loading />
-        )}
-      </Suspense>
+      <>
+        <div className="relative z-50">
+          <Navbar onNavigate={scrollToSection} sectionRefs={sectionRefs} />
+        </div>
+        <div className="max-w-8xl mx-auto min-h-91 px-6 pt-10 3xl:min-h-93">
+          <Outlet />
+        </div>
+        <div className="max-w-8xl mx-auto mt-20 bg-zinc-800 px-6 dark:bg-black">
+          <Footer />
+        </div>
+        <CopyrightNotice />
+      </>
     </div>
   );
 };
